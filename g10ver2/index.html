@@ -1,0 +1,525 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Адаптивное меню, меню бургер на HTML CSS JS</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Стиль попап -->
+		<link rel="stylesheet" href="css/popup.css" />
+		<!-- Стили Overlay popup -->
+		<link rel="stylesheet" href="css/overlay.css" />
+		<!-- Стили для swiper -->
+		<link rel="stylesheet" href="css/swiper.css" />
+		<!-- Стили для слайдера -->
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<!-- Оболочка для демонстрации -->
+		<div class="wrapper">
+			<!-- Контент -->
+			<header id="header" class="header lock-padding">
+				<div class="container">
+					<div class="header__body">
+						<a href="#" class="header__logo">
+							<img src="img/gorilla2585.png" alt="">
+						</a>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="" class="header__link">Об авторе</a>
+								</li>
+								<li>
+									<a href="" class="header__link">Программы</a>
+								</li>
+								<li>
+									<a href="" class="header__link">Результаты</a>
+								</li>
+								<li>
+									<a href="" class="header__link">Расчет БОВ</a>
+								</li>
+								<li>
+									<a href="" class="header__link">Контакты</a>
+								</li>
+							</ul>	
+						</nav>
+					</div>
+				</div>
+			</header>
+			<div class="content">
+				<div class="container">
+					<div class="content__blok1">
+						<div class="img_blok1">
+							<img src="img/front600.png" alt="">
+						</div>
+						<div class="text_blok1">
+							<p class="b1t1">Программы<br>тренировок</p>
+							<p class="b1t2">от Андрея Филиппова</p>
+							<button class="button1">Выбрать программу</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="content_blok2">
+					<div class="text_blok2">
+						<p class="b2t1">Об авторе программ</p>
+						<br>
+						<p class="b2t2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit ex quos voluptate doloribus sequi odio corporis animi harum commodi ipsa eum tenetur corrupti dignissimos, error minus dolorem consequatur vero? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorem, sequi ipsum quod, voluptatum harum quidem consectetur obcaecati nisi repellat quo laboriosam corrupti, natus minus. Debitis fuga earum dolorum eum.</p>
+					</div>
+					<div class="img_blok2">
+						<img src="img/IMG_2095.JPG" alt="">
+					</div>
+				</div>
+			</div>
+			<!-- Программы -->
+			<div class="this_programm">
+				<div class="container">
+					<h2 class="this_programm__title">Эти программы</h2>
+					<p class="this_programm__text">Программы идеально сбалансированы. Акцент идет на правильное восстановление каждой группы мышц. Поэтому перетренироваться практически невозможно.<br>Упражнения подобраны в такой последовательности, чтобы дать максимальный тренировочный эффект.</p>
+				</div>
+			</div>
+			<!-- Overlay программ -->
+			<div class="container">
+				<div class="content_blok3">
+					<!-- popup1 -->
+					<div id="popup1" class="popup">
+						<a href="#header" class="popup__area"></a>
+						<div class="popup__body">
+							<div class="popup__contentOverlay">
+								<a href="#header" class="popup__close close-popup">X</a>
+								Программа1<br>
+								«Тренажёрный зал»<br>
+								Набор мышечной массы<br>
+								<br>
+								Описание:<br>
+								<br>
+								Тренируйся в тренажёрном зале в стиле G10<br>
+								<br>
+								Эта программа поможет тебе:<br>
+								-набрать качественную мышечную массу мах эффективно.<br>
+								-сделать тело мах подвижным за счёт необычных комбинаций упражнений.<br>
+								-забыть о сонливости и усталости - просыпайся в отличном настроении и будь заряжен на целый день благодаря правильно выстроенному режиму питания и рекомендациям по сну.<br>
+								-питаться правильно не ограничивая себя жесткими диетами или наедать гигантское количество калорий.<br>
+								-сформировать осознанный подход к тренировкам и питанию. Узнать, что в зале можно тренироваться разносторонне.<br>
+								<br>
+								Что это за программа и что в неё входит:<br>
+								-2 месяца тренировок в соответствии с вашим уровнем подготовки. Тренировки от новичка до опытного.<br>
+								-Растяжка и тренировка пресса.<br>
+								-Правильная разминка.<br>
+								-программа питания составленная диетологом под вашу цель - набор мышечной массы<br>
+								<br>
+								Вы не привязаны ко времени - программа онлайн. В любое удобное время вы можете тренироваться.<br>
+							</div>
+						</div>
+					</div>
+					<!-- popup2 -->
+					<div id="popup2" class="popup">
+						<a href="#header" class="popup__area"></a>
+						<div class="popup__body">
+							<div class="popup__contentOverlay">
+								<a href="#header" class="popup__close close-popup">X</a>
+								Программа2<br>
+								«Тренажёрный зал»<br>
+								Сушка (похудение, рельеф)<br>
+								<br>
+								Описание:<br>
+								<br>
+								Тренируйся в тренажёрном зале в стиле G10<br>
+								<br>
+								Эта программа поможет тебе:<br>
+								-сжечь жир и сохранить мышечную массу. Сформировать мышечный корсет.<br>
+								-сделать тело мах подвижным за счёт необычных комбинаций упражнений и периодизации.<br>
+								-забыть о сонливости и усталости - просыпайся в отличном настроении и будь заряжен на целый день благодаря правильно выстроенному режиму питания и рекомендациям по сну.<br>
+								-питаться правильно не ограничивая себя жесткими диетами или наедать гигантское количество калорий.<br>
+								-сформировать осознанный подход к тренировкам и питанию. Узнать, что в зале можно тренироваться разносторонне.<br>
+								<br>
+								Что это за программа и что в неё входит:<br>
+								-2 месяца тренировок в соответствии с вашим уровнем подготовки. Тренировки от новичка до опытного.<br>
+								-Растяжка и тренировка пресса.<br>
+								-Правильная разминка.<br>
+								-Программа питания составленная диетологом под вашу цель - сушка (похудение, рельеф)<br>
+								<br>
+								Вы не привязаны ко времени - программа онлайн. В любое удобное время вы можете тренироваться.<br>
+							</div>
+						</div>
+					</div>
+					<!-- popup3 -->
+					<div id="popup3" class="popup">
+						<a href="#header" class="popup__area"></a>
+						<div class="popup__body">
+							<div class="popup__contentOverlay">
+								<a href="#header" class="popup__close close-popup">X</a>
+								Программа3<br>
+								«WORKOUT»<br>
+								Набор массы<br>
+								<br>
+								Описание:<br>
+								<br>
+								Что входит в программу G10 WORKOUT:<br>
+								<br>
+								4 уровня тренировок (от новичка до опытного). Для выполнения упражнений обязательно нужно иметь: пол, турник, брусья. Это весь инвентарь, который понадобится при выполнении G10 WORKOUT<br>
+								Программа питания подобранная индивидуально диетологом под тебя.<br>
+								Лекция, где я рассказываю о том, как формировать правильное пищевое поведение и построить идеальную программу питания для себя.<br>
+								Специальная программа на пресс. Тренировка в онлайн режиме - включил и занимаешься вместе со мной в любое удобное время!<br>
+								Растяжка и правильная разминка!<br>
+								Видео с техникой выполнения упражнений. Видео гид по программе.<br>
+								Тех поддержка. Консультации диетолога и тренера в любое время, на протяжении выполнения программы G10.<br>
+								Спец программа по обучению выходам силой на 2 руки. Также видео, где я рассказываю, как увеличить количество подтягиваний до мах.
+							</div>
+						</div>
+					</div>
+					<!-- popup4 -->
+					<div id="popup4" class="popup">
+						<a href="#header" class="popup__area"></a>
+						<div class="popup__body">
+							<div class="popup__contentOverlay">
+								<a href="#header" class="popup__close close-popup">X</a>
+								Программа4<br>
+								«WORKOUT»<br>
+								Сушка (рельеф, похудение)<br>
+								<br>
+								Описание:<br>
+								<br>
+								Что входит в программу G10 WORKOUT:<br>
+								<br>
+								4 уровня тренировок (от новичка до опытного). Для выполнения упражнений обязательно нужно иметь: пол, турник, брусья. Это весь инвентарь, который понадобится при выполнении G10 WORKOUT<br>
+								Программа питания подобранная индивидуально диетологом под тебя.<br>
+								Лекция, где я рассказываю о том, как формировать правильное пищевое поведение и построить идеальную программу питания для себя.<br>
+								Специальная программа на пресс. Тренировка в онлайн режиме - включил и занимаешься вместе со мной в любое удобное время!<br>
+								Растяжка и правильная разминка!<br>
+								Видео с техникой выполнения упражнений. Видео гид по программе.<br>
+								Тех поддержка. Консультации диетолога и тренера в любое время, на протяжении выполнения программы G10.<br>
+								Спец программа по обучению выходам силой на 2 руки. Также видео, где я рассказываю, как увеличить количество подтягиваний до мах.<br>
+							</div>
+						</div>
+					</div>
+					<!-- popup5 -->
+					<div id="popup5" class="popup">
+						<a href="#header" class="popup__area"></a>
+						<div class="popup__body">
+							<div class="popup__contentOverlay">
+								<a href="#header" class="popup__close close-popup">X</a>
+								Программа5<br>
+								«КУРС АРМИЯ»<br>
+								<br>
+								Описание:<br>
+								<br>
+								-5 недель тренировок в разных форматах. Для тренировок вам не нужно иметь зала, дорогостоящего оборудования! Достаточно улицы, турников и брусьев<br>
+								-все проходит онлайн, поэтому вы не привязаны к месту и времени:<br>
+								-системный подход Курс разработан на основе моего опыта, опыта моих подопечных выступающих в Ironman, триатлон, ультрамафонах. Также людей которых я уже <br>
+								подготовил к сдаче ФИЗО на 100 балов-<br>
+								ЦЕЛЬ КУРСА - сделать из вас выносливую машину, даже если вы сейчас находитесь на нулевом уровне.<br>
+								Задачи курса «АРМИЯ»<br>
+								-увеличить количество подтягиваний, даже с 0<br>
+								-развить скорость и технику бега на 100 метров, челнок 10 по 10, бег на 1,3,5,10 км.<br>
+								Начать можно в любое время, но чем больше времени будет у вас на подготовку, тем лучше результаты<br>
+					  		</div>
+						</div>
+					</div>
+					<!-- overlay -->
+					<div class="row"> 
+					  <div class="column">
+						<div class="container_img">
+							<div class="cvc darkened" >
+								<img src="img/IMG_1185_10_15.jpg" alt="Snow"  style="width:100%;">
+							</div>
+						    <div class="top-left">«Тренажёрный зал»<br>Набор мышечной массы</div>
+						    <div class="centered">Тренируйся в тренажёрном зале в стиле G10<br>
+								Вы не привязаны ко времени - программа онлайн.<br>
+								В любое удобное время вы можете тренироваться.<br>
+								<br>
+								<a href="#popup1" class="podrobnee">Подробнее >></a>
+							</div>
+							<button class="btn">Купить</button>
+						</div>
+					  </div>	
+					  <div class="column">		
+						<div class="container_img">
+							<div class="cvc darkened" >
+								<img src="img/IMG_1185_10_15.jpg" alt="Snow"  style="width:100%;">
+							</div>
+						    <div class="top-left">«Тренажёрный зал»<br>Сушка (похудение, рельеф)</div>
+						    <div class="centered">Тренируйся в тренажёрном зале в стиле G10<br>
+								Эта программа поможет тебе:<br>
+								 -сжечь жир и сохранить мышечную массу.<br>
+								 -cформировать мышечный корсет.<br>
+								 -сделать тело мах подвижным за счёт необычных комбинаций упражнений и периодизации.<br>
+								<br>
+								<a href="#popup2" class="podrobnee">Подробнее >></a>
+							</div>
+							<button class="btn">Купить</button>
+						</div>
+					  </div>
+					</div>
+
+					<div class="row"> 
+					  <div class="column">
+						<div class="container_img">
+							<div class="cvc darkened" >
+								<img src="img/IMG_1185_10_15.jpg" alt="Snow"  style="width:100%;">
+							</div>
+						    <div class="top-left">«WORKOUT»<br>Набор мышечной массы</div>
+						    <div class="centered">4 уровня тренировок (от новичка до опытного). 
+								Для выполнения упражнений обязательно нужно иметь: 
+								пол, турник, брусья. Это весь инвентарь, который
+								понадобится при выполнении G10 WORKOUT<br>
+								<br>
+								<a href="#popup3" class="podrobnee">Подробнее >></a>
+							</div>
+							<button class="btn">Купить</button>
+						</div>
+					  </div>	
+					  <div class="column">		
+						<div class="container_img">
+							<div class="cvc darkened" >
+								<img src="img/IMG_1185_10_15.jpg" alt="Snow"  style="width:100%;">
+							</div>
+						    <div class="top-left">«WORKOUT»<br>Сушка (похудение, рельеф)</div>
+						    <div class="centered">4 уровня тренировок (от новичка до опытного). 
+								Для выполнения упражнений обязательно нужно иметь: 
+								пол, турник, брусья. Это весь инвентарь, который
+								понадобится при выполнении G10 WORKOUT<br>
+								<br>
+								<a href="#popup4" class="podrobnee">Подробнее >></a>
+							</div>
+							<button class="btn">Купить</button>
+						</div>
+					  </div>
+					</div>
+
+					<div class="row"> 
+						<div class="container_img5">
+							<div class="cvc darkened" >
+								<img src="img/IMG_1185_10_15.jpg" alt="Snow" style="width:100%; border-radius: 10px; align-items: center;">
+							</div>
+							<div class="top-left">«КУРС АРМИЯ»<br></div>
+							<div class="centered">5 недель тренировок в разных форматах. 
+								Для тренировок вам не нужно иметь зала, 
+								дорогостоящего оборудования! 
+								Достаточно улицы, турников и брусьев<br>
+								<br>
+								<a href="#popup5" class="podrobnee">Подробнее >></a>
+							</div>
+							<button class="btn">Купить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Результаты -->
+			<div class="result">
+				<div class="container">
+					<h2 class="result__title">Результаты всего за месяц</h2>
+				</div>
+			</div>
+			<!-- Слайдер -->
+			<div class="container">
+				<div class="image-slider swiper-container">
+					<div class="image-slider__wrapper swiper-wrapper">
+						<!-- 1 -->
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/DoPosle/IMG_2072.JPG" alt="Картинка">
+							</div>
+						</div>
+						<!-- 2 -->
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/DoPosle/IMG_2123.JPG" alt="Картинка">
+							</div>
+						</div>
+						<!-- 3 -->
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/DoPosle/IMG_2124.JPG" alt="Картинка">
+							</div>
+						</div>
+						<!-- 4 -->
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/DoPosle/IMG_2321.JPG" alt="Картинка">
+							</div>
+						</div>
+						<!-- 5 -->
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/DoPosle/IMG_2322.JPG" alt="Картинка">
+							</div>
+						</div>
+						<!-- 6 -->
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/DoPosle/IMG_2323.JPG" alt="Картинка">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+			<!-- Калькулятор БОВ в попап -->
+			<!-- всем объекта которые будут вызывать попап добавить класс .popup-link -->
+			<a href="#popup" class="calculator popup-link" onclick="Start();">Калькулятор >></a>
+			<div id ="popup" class="popup">
+				<a href="#header" class="popup__area"></a>
+				<div class="popup__body">
+					<div class="popup__content">
+						<a href="#header" class="popup__close close-popup">X</a>
+						<div class="calc_title">Расчет БОВ и нормы воды</div>
+						<div class="calc_row">
+							<div class="calc_col">
+								<p class="calc_weight">Вес, кг:</p>
+								<input value="70" type="number" id="weight" oninput="Start()">
+							</div>
+							<div class="calc_col">
+								<p class="calc_height">Рост, см:</p>
+								<input value="180" type="number" id="height" oninput="Start()">
+							</div>
+						</div>
+						<div class="calc_row">
+							<div class="calc_col">
+								<p class="ages">Возраст, лет:</p>
+								<input value="30" type="number" id="age" oninput="Start()">
+							</div>
+							<div class="calc_col">
+								<p class="male">Пол:</p>
+								<input type="radio" value="5" name="r_male" checked oninput="Start()"> Мужчина 
+			    				<input type="radio" value="-161" name="r_male" oninput="Start()">	Женщина
+							</div>
+						</div>
+						<div class="calc_row">
+							<div class="calc_col">
+								<p class="BOV">Базовый обмен веществ, ккал:</p>
+								<div class="result_BOV" id="result_BOV"></div>
+							</div>
+							<div class="calc_col col_select">
+								<p class="activity">Уровень физической активности:</p>
+								<select id="select_activity" oninput="Start()">
+									<option value="1.2" selected>Минимальные нагрузки<br>(сидячая работа)</option>
+									<option value="1.375">Необрименительные тренировки<br> 3 раза в неделю</option>
+									<option value="1.4625">Тренировки 5 раз в неделю <br>(работа средней тяжести)</option>
+									<option value="1.55">Интенсивные тренировки 5 раз<br> в неделю</option>
+									<option value="1.6375">Ежедневные тренировки</option>
+									<option value="1.725">Ежед. интенсивные тренировки <br>или занятия 2/день</option>
+									<option value="1.9">Тяжелая физ. работа или <br>интенсивные тренировки 2/день</option>
+								</select>
+							</div>
+						</div>
+						<div class="calc_row">
+							<div class="calc_col">
+								<p class="type">Тип телосложения:</p>
+								<input type="radio" value="1200" name="r_type" checked oninput="Start()">  тип "А" 
+			    				<input type="radio" value="-200" name="r_type" oninput="Start()">	 тип "В"
+			    				<input type="radio" value="-500" name="r_type" oninput="Start()">	 тип "С"
+							</div>
+							<div class="calc_col">
+								<p class="day">Суточная каллорийность с учетом тренировок и типа телосложения, ккал:</p>
+								<div class="result_day" id="result_day"></div>
+							</div>
+						</div>
+						<div class="calc_row BZU">
+							<div class="calc_col">
+								<p class="B">Белки, г:</p>
+								<div class="result_B" id="result_B"></div>
+							</div>
+							<div class="calc_col">
+								<p class="Z">Жиры, г:</p>
+								<div class="result_Z" id="result_Z"></div>
+							</div>
+							<div class="calc_col">
+								<p class="U">Углеводы, г:</p>
+								<div class="result_U" id="result_U"></div>
+							</div>
+						</div>
+						<!-- <button onclick="Start();">Расчитать!</button> -->
+						<!-- <input id="clickMe" type="button" value="clickme" onclick="Start();" /> -->
+					</div>
+				</div>
+			</div>
+			<!-- Подключаем jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+			<!-- Подключаем файл JS скриптов -->
+			<script>
+				function Start();
+			</script>
+
+			<!-- Форма -->
+			<div class="form-wrapper">
+
+				<form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+					<p class="contact-form__title">остались вопросы?</p>
+					<p class="contact-form__description"></p>
+					<div class="contact-form__input-wrapper">
+						<input name="name" type="text" class="contact-form__input contact-form__input_name"
+						placeholder="Введите ваше имя">
+						<div class="contact-form__error contact-form__error_name"></div>
+					</div>
+
+					<div class="contact-form__input-wrapper">
+						<input name="tel" type="tel" class="contact-form__input contact-form__input_tel"
+					  placeholder="Введите ваш телефон">
+						<div class="contact-form__error contact-form__error_tel"></div>
+					</div>
+
+					<div class="contact-form__input-wrapper"> 
+						<input name="email" type="email" class="contact-form__input contact-form__input_email"
+						placeholder="Введите ваш email">
+						<div class="contact-form__error contact-form__error_email"></div>
+					</div>
+
+					<div class="contact-form__input-wrapper">
+						<textarea name="text" class="contact-form__input contact-form__text" placeholder="Введите ваше сообщение"></textarea>
+						<div class="contact-form__error contact-form__error_text"></div>
+					</div>
+
+					<div class="contact-form__input-wrapper">
+						<input class="contact-form__input contact-form__file" type="file" name="files[]">
+						<div class="contact-form__error contact-form__error_file"></div>
+					</div>
+
+					<div class="contact-form__input-wrapper">
+						<input type="checkbox" name="agreement" class="contact-form__input contact-form__checkbox" id="agreement">
+						<label for="agreement" class="contact-form__checkbox-label">
+							Я принимаю условия <a href="politic.txt.txt">пользовательского соглашения</a>
+						</label>
+					<div class="contact-form__error contact-form__error_agreement"></div>
+					</div>
+
+					<button class="contact-form__button" type="submit"> Отправить </button>
+				</form>
+			</div>
+		</div>
+		<!-- Подключаем jQuery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+				<!-- Скрипт для слайдера -->
+		<script src="js/swiper-bundle.min.js"></script
+		    <!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- jQuery Mask Plugin -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+		<script src="/mail/js/mail.js"></script>
+		<!-- Подключаем файл JS скриптов -->
+		 <!-- Подключаем файл JS скриптов -->
+    	<script src="js/swiper.js"></script>
+		<script src="js/script.js"></script>
+
+		<script>
+		  $(function() {
+		      $('.contact-form__input_tel').mask('+7(000)000-00-00');
+		  });
+		</script>
+	</body>
+</html>
