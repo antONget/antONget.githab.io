@@ -1,6 +1,6 @@
 
 /*Обнуление*/
-*{
+/**{
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -35,11 +35,11 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}*/
 /*--------------------*/
 
 /*Основные стили*/
-/*Калькулятор*/
+/*Overlay*/
 	.popup__contentOverlay {
 		font-size: 16px;
 		font-weight: normal;
@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		text-decoration: none;
 	}
 
-		.container_img {
+	.container_img {
 		position: relative;
 		text-align: left;
 		margin: 40px 10px;
@@ -120,11 +120,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		left: 16px;
 		z-index: 3;
 		color: white;
-		font-size: 30px;
-		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+		font-size: calc(16px + (30 - 16)*((100vw - 320px)/(1180 - 320)));
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";*/
 	}
-
-
 
 	.centered {
 		position: absolute;
@@ -136,23 +134,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		font-weight: 50;
 		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	}
-	* {
-		box-sizing: border-box;
-	}
-
-	body {
-		margin: 0;
-		font-family: Arial;
-	}	
-
 
 	.row {
 		display: -ms-flexbox; /* IE10 */
 		display: flex;
 		-ms-flex-wrap: wrap; /* IE10 */
 		flex-wrap: wrap;
-		padding: 0 40px;
-
+		padding: 0px 0px;
+		justify-content: space-around;
 	}
 
 	/* Create four equal columns that sits next to each other */
@@ -160,7 +149,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		-ms-flex: 50%; /* IE10 */
 		flex: 50%;
 		max-width: 50%;
-		padding: 0 40px;
+		padding: 0px 3%;
 	}
 
 	.column img {
@@ -192,8 +181,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		right: 0;
 		bottom: 0;
 		background-color: rgba(0,0,0,0.5);
-		border: 4px solid white;
-		border-radius: 20px;
+		border: 2px solid white;
+		border-radius: 15px;
 		color: white;
 		padding: 10px 32px;
 		text-align: center;
@@ -214,15 +203,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	}	
 
 	/* Responsive layout - makes a two column-layout instead of four columns */
-	@media screen and (max-width: 800px) {
-		.column {
-			-ms-flex: 50%;
-			flex: 50%;
-			max-width: 50%;
+	@media screen and (max-width: 1000px) {
+		.top-left {
+			top: 12px;
+			/*font-size: 24px;*/
 		}
+
+		.centered {
+			top: 80px;
+			font-size: 14px;
+			font-weight: 30;
+		}
+	}
+	@media screen and (max-width: 800px) {
 		.top-left{
-			font-size: 20px;
-			top: 10px;
+			/*font-size: 20px;*/
+			top: 20px;
 			left: 18px;
 		}
 		.centered {
@@ -243,27 +239,27 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 			padding: 6px 16px;
 			text-align: center;
 			font-size: 14px;
-			margin: 10px 10px;
+			margin: 15px 15px;
 
 		}
 	}
 
 		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 700px) {
 		.column {
 			-ms-flex: 100%;
 			flex: 100%;
 			max-width: 100%;
 		}
 	   .top-left{
-			font-size: 28px;
+			font-size: calc(16px + (40 - 16)*((100vw - 320px)/(700 - 320)));
 			top: 10px;
 		   left: 18px;
 		  }
 		.centered {
-		   top: 70px;
+		   top: calc(40px + (100 - 40)*((100vw - 320px)/(700 - 320)));
 		   left: 18px;
-		   font-size: 16px;
+		   font-size: calc(10px + (20 - 10)*((100vw - 320px)/(700 - 320)));
 			margin: 8px 0px;
 		}
 		.column {
@@ -278,11 +274,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 			border-radius: 10px;
 			padding: 6px 16px;
 			text-align: center;
-			font-size: 24px;
-			margin: 20px 20px;
+			font-size: calc(14px + (34 - 14)*((100vw - 320px)/(700 - 320)));
+			margin: 18px 20px;
 		}
 		.container_img5 {
 			width:100%; 
 			margin: 0px 20px;
 		}		
+	}
+	@media screen and (max-width: 600px) {
+		.top-left{
+			/*font-size: 16px;*/*/
+			top: 10px;
+		   left: 18px;
+		  }
+		.centered {
+		   /*top: 40px;*/
+		   left: 18px;
+		   /*sfont-size: 10px;*/
+			margin: 8px 0px;
+		}
 	}

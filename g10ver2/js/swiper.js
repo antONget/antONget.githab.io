@@ -33,7 +33,7 @@ var swiper = new Swiper('.image-slider', {
 	   // when window width is >= 640px
 	   640: {
 	      slidesPerView: 3,
-	      spaceBetween: 40
+	      spaceBetween: -80
 	   }
   	}
 })
