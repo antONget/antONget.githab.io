@@ -16,7 +16,7 @@
 
 		let fd = new FormData(form);
 		$.ajax({
-			url: "/mail/php/mail.php",
+			url: "C:/OpenServer/domains/g10ver2/mail/php/mail.php",
 			type: "POST",
 			data: fd,
 			processData: false,

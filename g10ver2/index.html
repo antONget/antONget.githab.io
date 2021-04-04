@@ -16,6 +16,8 @@
 		<link rel="stylesheet" href="css/swiper.css" />
 		<!-- Стили для слайдера -->
 		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+		<!-- Стили для иконочного шрифта -->
+		<link rel="stylesheet" href="css/iconsfonts.css" />
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 		<!-- Адаптив -->
@@ -50,7 +52,7 @@
 									<a href="#popup" class="header__link">Расчет БОВ</a>
 								</li>
 								<li>
-									<a href="" class="header__link">Контакты</a>
+									<a href="#contact" class="header__link">Контакты</a>
 								</li>
 							</ul>	
 						</nav>
@@ -66,7 +68,8 @@
 						<div class="text_blok1">
 							<p class="b1t1">Программы<br>тренировок</p>
 							<p class="b1t2">от Андрея Филиппова</p>
-							<button class="button1">Выбрать программу</button>
+							<!-- <button href="#programm" class="button1">Выбрать программу</button> -->
+							<input type="button" onclick="location.href='#programm'" class="button1" value ="Выбрать программу"/>
 						</div>
 					</div>
 				</div>
@@ -86,7 +89,7 @@
 			<!-- Программы -->
 			<div id="programm" class="this_programm">
 				<div class="container">
-					<h2 class="this_programm__title">Эти программы</h2>
+					<h2 class="this_programm__title">Программы, которые тебя изменят</h2>
 					<p class="this_programm__text">Программы идеально сбалансированы. Акцент идет на правильное восстановление каждой группы мышц. Поэтому перетренироваться практически невозможно.<br>Упражнения подобраны в такой последовательности, чтобы дать максимальный тренировочный эффект.</p>
 				</div>
 			</div>
@@ -242,7 +245,7 @@
 								<br>
 								<a href="#popup1" class="podrobnee">Подробнее >></a>
 							</div>
-							<button class="btn">Купить</button>
+							<input type="button" onclick="location.href='https://wapp.click/79996412643'" class="btn" value ="Купить"/>
 						</div>
 					  </div>	
 					  <div class="column">		
@@ -259,7 +262,7 @@
 								<br>
 								<a href="#popup2" class="podrobnee">Подробнее >></a>
 							</div>
-							<button class="btn">Купить</button>
+							<input type="button" onclick="location.href='https://wapp.click/79996412643'" class="btn" value ="Купить"/>
 						</div>
 					  </div>
 					</div>
@@ -278,7 +281,7 @@
 								<br>
 								<a href="#popup3" class="podrobnee">Подробнее >></a>
 							</div>
-							<button class="btn">Купить</button>
+							<input type="button" onclick="location.href='https://wapp.click/79996412643'" class="btn" value ="Купить"/>
 						</div>
 					  </div>	
 					  <div class="column">		
@@ -294,25 +297,27 @@
 								<br>
 								<a href="#popup4" class="podrobnee">Подробнее >></a>
 							</div>
-							<button class="btn">Купить</button>
+							<input type="button" onclick="location.href='https://wapp.click/79996412643'" class="btn" value ="Купить"/>
 						</div>
 					  </div>
 					</div>
 
-					<div class="row"> 
-						<div class="container_img5">
-							<div class="cvc darkened" >
-								<img src="img/IMG_1185_10_15.jpg" alt="Snow" style="width:100%; border-radius: 10px; align-items: center;">
+					<div class="row">
+						<div class="column">	 
+							<div class="container_img5">
+								<div class="cvc darkened" >
+									<img src="img/IMG_1185_10_15.jpg" alt="Snow" style="width:100%; border-radius: 10px; align-items: center;">
+								</div>
+								<div class="top-left">«КУРС АРМИЯ»<br></div>
+								<div class="centered">5 недель тренировок в разных форматах. 
+									Для тренировок вам не нужно иметь зала, 
+									дорогостоящего оборудования! 
+									Достаточно улицы, турников и брусьев<br>
+									<br>
+									<a href="#popup5" class="podrobnee">Подробнее >></a>
+								</div>
+								<input type="button" onclick="location.href='https://wapp.click/79996412643'" class="btn" value ="Купить"/>
 							</div>
-							<div class="top-left">«КУРС АРМИЯ»<br></div>
-							<div class="centered">5 недель тренировок в разных форматах. 
-								Для тренировок вам не нужно иметь зала, 
-								дорогостоящего оборудования! 
-								Достаточно улицы, турников и брусьев<br>
-								<br>
-								<a href="#popup5" class="podrobnee">Подробнее >></a>
-							</div>
-							<button class="btn">Купить</button>
 						</div>
 					</div>
 				</div>
@@ -368,94 +373,103 @@
 					<div class="swiper-button-prev"></div>
 				</div>
 			</div>
+		</div>
+		<div  class="footer_body">
+			<h2 class="footer__title">Остались вопросы</h2>
+			<p class="footer__text">Готов подробно ответить на возникшие вопросы, оставь контактные данные в форме или напиши в соцсети по ссылкам ниже</p>
+		</div>
+		<div class="footer">
 			<!-- Калькулятор БОВ в попап -->
 			<!-- всем объекта которые будут вызывать попап добавить класс .popup-link -->
-			<a href="#popup" class="calculator popup-link" onclick="Start();">Калькулятор >></a>
-			<div id ="popup" class="popup">
-				<a href="#header" class="popup__area"></a>
-				<div class="popup__body">
-					<div class="popup__content">
-						<a href="#header" class="popup__close close-popup">X</a>
-						<div class="calc_title">Расчет БОВ и нормы воды</div>
-						<div class="calc_row">
-							<div class="calc_col">
-								<p class="calc_weight">Вес, кг:</p>
-								<input value="70" type="number" id="weight" oninput="Start()">
+			<div class="footer_col1">
+				<div class="calculator_desc">Для эффективных тренировок нужно правильно питаться. <br>А сколько калорий тебе необходимо ты можешь расчитать нажав на кнопку</div>
+				<a href="#popup" class="calculator popup-link" onclick="Start();">Калькулятор >></a>
+				<div id ="popup" class="popup">
+					<a href="#header" class="popup__area"></a>
+					<div class="popup__body">
+						<div class="popup__content">
+							<a href="#header" class="popup__close close-popup">X</a>
+							<div class="calc_title">Расчет БОВ и нормы воды</div>
+							<div class="calc_row">
+								<div class="calc_col">
+									<p class="calc_weight">Вес, кг:</p>
+									<input value="70" type="number" id="weight" oninput="Start()">
+								</div>
+								<div class="calc_col">
+									<p class="calc_height">Рост, см:</p>
+									<input value="180" type="number" id="height" oninput="Start()">
+								</div>
 							</div>
-							<div class="calc_col">
-								<p class="calc_height">Рост, см:</p>
-								<input value="180" type="number" id="height" oninput="Start()">
+							<div class="calc_row">
+								<div class="calc_col">
+									<p class="ages">Возраст, лет:</p>
+									<input value="30" type="number" id="age" oninput="Start()">
+								</div>
+								<div class="calc_col">
+									<p class="male">Пол:</p>
+									<input type="radio" value="5" name="r_male" checked oninput="Start()"> Мужчина 
+				    				<input type="radio" value="-161" name="r_male" oninput="Start()">	Женщина
+								</div>
+							</div>
+							<div class="calc_row">
+								<div class="calc_col">
+									<p class="BOV">Базовый обмен веществ, ккал:</p>
+									<div class="result_BOV" id="result_BOV"></div>
+								</div>
+								<div class="calc_col col_select">
+									<p class="activity">Уровень физической активности:</p>
+									<select id="select_activity" oninput="Start()">
+										<option value="1.2" selected>Минимальные нагрузки<br>(сидячая работа)</option>
+										<option value="1.375">Необрименительные тренировки<br> 3 раза в неделю</option>
+										<option value="1.4625">Тренировки 5 раз в неделю <br>(работа средней тяжести)</option>
+										<option value="1.55">Интенсивные тренировки 5 раз<br> в неделю</option>
+										<option value="1.6375">Ежедневные тренировки</option>
+										<option value="1.725">Ежед. интенсивные тренировки <br>или занятия 2/день</option>
+										<option value="1.9">Тяжелая физ. работа или <br>интенсивные тренировки 2/день</option>
+									</select>
+								</div>
+							</div>
+							<div class="calc_row">
+								<div class="calc_col">
+									<p class="type">Тип телосложения:</p>
+									<input type="radio" value="1200" name="r_type" checked oninput="Start()">  тип "А" 
+				    				<input type="radio" value="-200" name="r_type" oninput="Start()">	 тип "В"
+				    				<input type="radio" value="-500" name="r_type" oninput="Start()">	 тип "С"
+								</div>
+								<div class="calc_col">
+									<p class="day">Суточная каллорийность с учетом тренировок и типа телосложения, ккал:</p>
+									<div class="result_day" id="result_day"></div>
+								</div>
+							</div>
+							<div class="calc_row BZU">
+								<div class="calc_col">
+									<p class="B">Белки, г:</p>
+									<div class="result_B" id="result_B"></div>
+								</div>
+								<div class="calc_col">
+									<p class="Z">Жиры, г:</p>
+									<div class="result_Z" id="result_Z"></div>
+								</div>
+								<div class="calc_col">
+									<p class="U">Углеводы, г:</p>
+									<div class="result_U" id="result_U"></div>
+								</div>
 							</div>
 						</div>
-						<div class="calc_row">
-							<div class="calc_col">
-								<p class="ages">Возраст, лет:</p>
-								<input value="30" type="number" id="age" oninput="Start()">
-							</div>
-							<div class="calc_col">
-								<p class="male">Пол:</p>
-								<input type="radio" value="5" name="r_male" checked oninput="Start()"> Мужчина 
-			    				<input type="radio" value="-161" name="r_male" oninput="Start()">	Женщина
-							</div>
-						</div>
-						<div class="calc_row">
-							<div class="calc_col">
-								<p class="BOV">Базовый обмен веществ, ккал:</p>
-								<div class="result_BOV" id="result_BOV"></div>
-							</div>
-							<div class="calc_col col_select">
-								<p class="activity">Уровень физической активности:</p>
-								<select id="select_activity" oninput="Start()">
-									<option value="1.2" selected>Минимальные нагрузки<br>(сидячая работа)</option>
-									<option value="1.375">Необрименительные тренировки<br> 3 раза в неделю</option>
-									<option value="1.4625">Тренировки 5 раз в неделю <br>(работа средней тяжести)</option>
-									<option value="1.55">Интенсивные тренировки 5 раз<br> в неделю</option>
-									<option value="1.6375">Ежедневные тренировки</option>
-									<option value="1.725">Ежед. интенсивные тренировки <br>или занятия 2/день</option>
-									<option value="1.9">Тяжелая физ. работа или <br>интенсивные тренировки 2/день</option>
-								</select>
-							</div>
-						</div>
-						<div class="calc_row">
-							<div class="calc_col">
-								<p class="type">Тип телосложения:</p>
-								<input type="radio" value="1200" name="r_type" checked oninput="Start()">  тип "А" 
-			    				<input type="radio" value="-200" name="r_type" oninput="Start()">	 тип "В"
-			    				<input type="radio" value="-500" name="r_type" oninput="Start()">	 тип "С"
-							</div>
-							<div class="calc_col">
-								<p class="day">Суточная каллорийность с учетом тренировок и типа телосложения, ккал:</p>
-								<div class="result_day" id="result_day"></div>
-							</div>
-						</div>
-						<div class="calc_row BZU">
-							<div class="calc_col">
-								<p class="B">Белки, г:</p>
-								<div class="result_B" id="result_B"></div>
-							</div>
-							<div class="calc_col">
-								<p class="Z">Жиры, г:</p>
-								<div class="result_Z" id="result_Z"></div>
-							</div>
-							<div class="calc_col">
-								<p class="U">Углеводы, г:</p>
-								<div class="result_U" id="result_U"></div>
-							</div>
-						</div>
-						<!-- <button onclick="Start();">Расчитать!</button> -->
-						<!-- <input id="clickMe" type="button" value="clickme" onclick="Start();" /> -->
 					</div>
 				</div>
+				<div class="footer_img">
+					<img src="img/IMG_1461_1.jpg" alt="">
+				</div>
+				<div class="link_soc">
+					<a href="https://www.youtube.com/channel/UCo9TUzJwXSqrHy0Z2msPdPw" class="link fab fa-youtube"></a>
+					<a href="https://instagram.com/andei.filippov1980" class="link fab fa-instagram"></a>
+					<a href="" class="link fab fa-telegram-plane"></a>
+					<a href="https://wapp.click/79996412643" class="link fab fa-whatsapp"></a>
+				</div>
 			</div>
-			<!-- Подключаем jQuery -->
-			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-			<!-- Подключаем файл JS скриптов -->
-			<script>
-				function Start();
-			</script>
-
 			<!-- Форма -->
-			<div class="form-wrapper">
+			<div id="contact" class="form-wrapper">
 
 				<form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
 					<p class="contact-form__title">остались вопросы?</p>
@@ -506,14 +520,18 @@
 		<script src="js/swiper-bundle.min.js"></script>
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+		<!-- Подключаем файл JS скриптов -->
+		<script>
+			function Start()
+		</script>
 		<!-- jQuery Mask Plugin -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
-		<script src="/mail/js/mail.js"></script>
+		<script src="mail/js/mail.js"></script>
 		<!-- Подключаем файл JS скриптов -->
 		 <!-- Подключаем файл JS скриптов -->
     	<script src="js/swiper.js"></script>
+    	<!-- <script src="https://kit.fontawesome.com/8b378cd516.js" crossorigin="anonymous"></script> -->
     	<!-- <script src="js/anchors.js"></script> -->
 		<script src="js/script.js"></script>
 

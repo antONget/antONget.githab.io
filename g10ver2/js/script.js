@@ -28,7 +28,7 @@ var swiper = new Swiper('.image-slider', {
 });*/
 
 //- Using a function pointer:
-document.getElementById("clickMe").onclick = Start;
+// document.getElementById("clickMe").onclick = Start;
 
 
 function Start() {
@@ -44,7 +44,7 @@ function Start() {
 	var t = document.getElementsByName('r_type');
 	for (var i = 0; i < t.length; i++) {
 		if (t[i].type == "radio" && t[i].checked) {
-			var telo = parseInt ( t[i].value );
+			var telo = parseInt (t[i].value);
 		}
 	}
 	var n = document.getElementById('select_activity').options.selectedIndex;
@@ -60,4 +60,4 @@ function Start() {
 	document.getElementById('result_B').innerHTML = B;
 	document.getElementById('result_Z').innerHTML = Z;
 	document.getElementById('result_U').innerHTML = U;
-}
+};

@@ -110,8 +110,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}*/
 	.container_img5 {
 		position: relative;
 		text-align: left;
-		width:45%; 
-		margin: 0px auto;
+		/*width:45%; */
+		margin: 40px auto;
 	}
 
 	.top-left {
@@ -195,6 +195,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}*/
 	.btn:hover {
 		background-color: #d5a575;
 		color: white;
+		cursor: pointer;
 	}
 
 	.podrobnee{
@@ -279,7 +280,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}*/
 		}
 		.container_img5 {
 			width:100%; 
-			margin: 0px 20px;
+			/*margin: 0px 0px;*/
+			padding: 0px 10px;
 		}		
 	}
 	@media screen and (max-width: 600px) {

@@ -65,6 +65,12 @@ html{
 	-webkit-backgraund-clip: content-box;
 	backgraund-clip: content-box;
 }
+#contact{
+	padding-top: 80px;
+	margin-top: -80px;
+	-webkit-backgraund-clip: content-box;
+	backgraund-clip: content-box;
+}
 /* Меню */
 	.header {
 		position: fixed;
@@ -320,6 +326,14 @@ html{
 		}
 	}
 /*Cтили блока 2*/
+	.this_programm__title {
+		text-align: center;
+		margin: 10px auto;
+		font-size: 45px;
+	}
+	.this_programm__text {
+		text-align: center;
+	}
 	.content_blok2 {
 		position: relative;
 		height: 460px;
@@ -330,10 +344,6 @@ html{
 	}
 	.text_blok2 {
 		width: 60%;
-		/*position:relative;*/
-/*		top: 50px;
-		left: 30px;
-		display: flex;*/
 	}
 	.b2t1 {
 		font-size: 45px;
@@ -342,12 +352,7 @@ html{
 	.b2t2 {}
 	.img_blok2 {
 		width: 40%;
-		/*position: relative;*/
 		text-align: center;
-/*		top: 30px;
-		left: 50px;*/
-		/*display: inline-flex;*/
-		
 	}
 	.img_blok2 img{
 		height: 400px;
@@ -355,14 +360,11 @@ html{
 
 	@media (max-width: 600px){
 		.content_blok2 {
-			/*position: static;*/
 			height: 560px;
 			
 		}
 		.text_blok2 {
 			width: 100%;
-			/*position:static;*/
-
 			top: 0px;
 			left: 0px;
 			display: block;
@@ -375,16 +377,12 @@ html{
 		.b2t2 {}
 		.img_blok2 {
 			width: 100%;
-			/*position:static;*/
-/*			top: 0px;
-			left: 0px;*/
 			display: block;
 			
 		}
 		.img_blok2 img{
 			position: relative;
 			height: 400px;
-			/*left: 80px;*/
 		}
 	}
 	@media (max-width: 400px){
@@ -439,6 +437,75 @@ html{
 		left: 6px;
 		z-index: 10;
 	}
+
+/*Футер*/
+	.footer_body {
+		color: #fff;
+		text-align: center;
+		background-color: #3b2612;*/
+	}
+	.footer__title {
+		margin:30px auto;
+		font-size: 45px;
+		padding: 20px 0px 0px 0px;
+	}
+	.footer__text {
+		font-size: 20px;
+	}
+
+	.footer{
+		background-color: #3b2612;
+		display: flex;
+		flex-wrap: wrap;
+		/*max-width: 1180px;*/
+/*		margin: 0px auto;
+		padding: 0px 10px;*/
+	}
+	.footer_col1{
+		/*width: 50%;*/
+		margin: 30px auto;
+		border: 1px solid #fff;
+		justify-content: center;
+	}
+	.calculator_desc{
+		color: #fff;
+		text-align: left;
+		/*border: 3px solid #fff;*/
+		/*display: block;*/
+		line-height: 25px;
+		margin: 10px 20px;
+	}
+	.calculator{
+		background-color: #d5a575;
+		display: block;
+		text-align: center;
+		width: 352px;
+		margin: 10px auto;
+		padding: 15px 10px;
+		font-size: 25px;
+		/*border: 3px solid #fff;*/
+	}
+	.footer_img{
+		/*border: 3px solid #fff;*/
+		
+		
+	}
+	.footer_img img{
+		display: block;
+		margin: auto;
+	}
+	.link_soc{
+		display: flex;
+		justify-content: center;
+		/*background-color: rgba(0, 0, 0, 0.3);*/
+
+	}
+	.link.fab{
+		font-size: 50px;
+		color: #d5a575;
+		text-align: center;
+		margin: 10px 20px;
+	}
 /*форма обратной связи*/
 	.form-wrapper {
 		box-sizing: border-box;
@@ -448,7 +515,7 @@ html{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: rgba(251, 251, 251, 0.2);
+		/*background: rgba(251, 251, 251, 0.2);*/
 		padding: 30px;
 		border-radius: 5px;
 	}
