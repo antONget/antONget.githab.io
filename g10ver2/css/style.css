@@ -464,7 +464,7 @@ html{
 	.footer_col1{
 		/*width: 50%;*/
 		margin: 30px auto;
-		border: 1px solid #fff;
+		/*border: 1px solid #fff;*/
 		justify-content: center;
 	}
 	.calculator_desc{
